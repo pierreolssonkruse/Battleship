@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.8" icons="true" automaticImage="PNG">  
+  <object id="1" language="java" name="BattleBoard" project="BattleShip" file="/BattleShip/src/BattleBoard.java" 
+    binary="false" label="mainProg" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="2">      
+      <position height="21" width="0" x="0" y="383"/>    
+    </execution>    
+    <execution id="3">      
+      <position height="21" width="0" x="0" y="529"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="136" width="0" x="0" y="97"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="73" width="0" x="0" y="139"/>    
+    </execution>    
+    <execution id="9">      
+      <position height="84" width="0" x="0" y="598"/>    
+    </execution>    
+    <execution id="11">      
+      <position height="21" width="0" x="0" y="640"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="21" width="90" x="5" y="640"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="21" width="90" x="5" y="640"/>    
+    </execution>  
+  </object>  
+  <object id="16" language="java" name="BattleSquare" project="BattleShip" file="/BattleShip/src/BattleSquare.java" 
+    binary="false" label="battleSquare" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="423" y="0"/>    
+    <execution id="17">      
+      <position height="497" width="0" x="0" y="206"/>    
+    </execution>    
+    <execution id="19">      
+      <position height="323" width="0" x="0" y="248"/>    
+    </execution>    
+    <execution id="22">      
+      <position height="21" width="0" x="0" y="300"/>    
+    </execution>    
+    <execution id="24">      
+      <position height="21" width="0" x="0" y="352"/>    
+    </execution>    
+    <execution id="27">      
+      <position height="21" width="0" x="0" y="446"/>    
+    </execution>    
+    <execution id="29">      
+      <position height="21" width="0" x="0" y="498"/>    
+    </execution>  
+  </object>  
+  <object id="31" language="java" name="java.awt.EventQueue" project="BattleShip" 
+    file="C:/Program Files/Java/jre1.8.0_65/lib/rt.jar" binary="true" label="&lt;static&gt;" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="8">      
+      <position height="21" width="0" x="0" y="170"/>    
+    </execution>  
+  </object>  
+  <message id="5" operation="main(java.lang.String[]):void">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="invokeLater(java.lang.Runnable):void">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="10" operation="win():void">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="12">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="14">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="18" operation="actionPerformed(java.awt.event.ActionEvent):void">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="20">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="21" operation="setDisabledIcon(javax.swing.Icon):void">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>  
+  <message id="23" operation="setEnabled(boolean):void">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="24"/>  
+  </message>  
+  <message id="25" operation="addMisses():void">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="2"/>  
+  </message>  
+  <message id="26" operation="setDisabledIcon(javax.swing.Icon):void">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="27"/>  
+  </message>  
+  <message id="28" operation="setEnabled(boolean):void">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="29"/>  
+  </message>  
+  <message id="30" operation="addHits():void">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="3"/>  
+  </message>
+</sequence-diagram>

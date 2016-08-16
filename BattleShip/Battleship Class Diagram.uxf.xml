@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>30</y>
+      <w>230</w>
+      <h>570</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;BattleBoard&gt;&gt;
+Package::Default
+
+--
+mainPanel: JPanel
+gridPanel: JPanel
+scoreLabel: JLabel
+missLabel: JLabel
+hitLabel: JLabel
+treeLabel: JLabel
+random: Random
+shipIsVertical: boolean
+gbc: GridBagConstraints
+nrOfMisses: int
+nrOfHits: int
+startI: int
+startJ: int
+resetButton: JButton
+WINDOW_HEIGHT: int
+WINDOW_WIDTH: int
+GRID_SIZE: int
+SHIP_LENGTH: int
+BUTTON_SIZE: int
+BG_COLOR: Color
+FONT: Font
+TREE_ICON: ImageIcon
+--
+_main(String[]):void_
+BattleBoard()
+addButtons(JPanel):void
+placeShips():void
+resetAll():void
+win():void
+addMisses():void
+addHits():void
+actionPerformed(ActionEvent):void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>110</y>
+      <w>230</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;BattleSquare&gt;&gt;
+Package::Default
+
+--
+hasShip: boolean
+HIT_ICON: ImageIcon
+MISS_ICON: ImageIcon
+WATER_ICON: ImageIcon
+--
+BattleSquare(BattleBoard)
+setOwner():void
+resetButton():void
+actionPerformed(ActionEvent):void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>220</x>
+      <y>160</y>
+      <w>160</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+-buttons
+m1=0..n</panel_attributes>
+    <additional_attributes>140.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>220</x>
+      <y>200</y>
+      <w>160</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+-mainProg
+m1=0..1</panel_attributes>
+    <additional_attributes>10.0;20.0;140.0;20.0</additional_attributes>
+  </element>
+</diagram>
